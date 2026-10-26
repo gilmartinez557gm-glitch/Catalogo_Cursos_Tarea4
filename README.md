@@ -83,25 +83,25 @@ Las pantallas de detalle y edición regresan mediante `Shell.Current.GoToAsync("
 ## Capturas de pantalla
 
 ### Inicio
-![Pantalla de inicio](capturas/inicio.png)
+![Pantalla de inicio](Capturas/inicio.png)
 
 ### Catálogo de cursos
-![Catálogo de cursos](capturas/cursos.png)
+![Catálogo de cursos](Capturas/cursos.png)
 
 ### Detalle del curso
-![Detalle del curso](capturas/detalle-curso.png)
+![Detalle del curso](Capturas/detalle-curso.png)
 
 ### Edición de un curso
-![Edición de un curso](capturas/editar-curso.png)
+![Edición de un curso](Capturas/editar-curso.png)
 
 ### Perfil y selector de apariencia
-![Perfil y selector de apariencia](capturas/perfil.png)
+![Perfil y selector de apariencia](Capturas/perfil.png)
 
 ### Modo oscuro
-![Aplicación en modo oscuro](capturas/modo-oscuro.png)
+![Aplicación en modo oscuro](Capturas/modo-oscuro.png)
 
 ### Menú lateral
-![Menú lateral](capturas/menu-lateral.png)
+![Menú lateral](Capturas/menu-lateral.png)
 
 
 ## Ejecución
