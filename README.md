@@ -112,4 +112,4 @@ Abrir la solución en Visual Studio con soporte para .NET MAUI, restaurar las de
 
 ## Autor
 
-Proyecto académico desarrollado como parte de la actividad **Tarea 4: Catálogo de cursos con Shell**.
+Grupo N°3 de la clase de programacion de dispositivos móviles II.
