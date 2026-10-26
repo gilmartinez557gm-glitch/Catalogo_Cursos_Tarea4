@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    BackgroundColor="{AppThemeBinding Light={StaticResource FondoClaro}, Dark={StaticResource FondoOscuro}}"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Catalogo_Cursos_Tarea4.CursosPage"
+    Title="Cursos">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label
+                Text="Catálogo de cursos"
+                FontSize="26"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Cursos disponibles"
+                FontSize="14"
+                HorizontalOptions="Center" />
+
+            <CollectionView
+                x:Name="ListaCursos"
+                SelectionMode="None">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+                            Stroke="#CBD5E1"
+                            StrokeThickness="1"
+                            Padding="15"
+                            Margin="0,5"
+                            StrokeShape="RoundRectangle 12">
+
+                            <VerticalStackLayout Spacing="8">
+
+                                <Label
+                                    Text="{Binding Nombre}"
+                                    FontSize="18"
+                                    FontAttributes="Bold" />
+
+                                <Label
+                                    Text="{Binding Descripcion}"
+                                    FontSize="14" />
+
+                                <Label
+                                    Text="{Binding Instructor, StringFormat='Instructor: {0}'}"
+                                    FontSize="13" />
+
+                                <Label
+                                    Text="{Binding DuracionHoras, StringFormat='Duración: {0} horas'}"
+                                    FontSize="13" />
+
+                                <Label
+                                    Text="{Binding Nivel, StringFormat='Nivel: {0}'}"
+                                    FontSize="13" />
+
+                                <HorizontalStackLayout Spacing="10">
+                                    <Button
+                                        Text="Ver detalle"
+                                        Style="{StaticResource BotonPrimario}"
+                                        Clicked="OnVerDetalleClicked"
+                                        CommandParameter="{Binding Id}" />
+
+                                    <Button
+                                        Text="Editar"
+                                        Style="{StaticResource BotonSecundario}"
+                                        Clicked="OnEditarCursoClicked"
+                                        CommandParameter="{Binding .}" />
+                                </HorizontalStackLayout>
+
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Catalogo_Cursos_Tarea4.InicioPage"
+    Title="Inicio"
+    BackgroundColor="{AppThemeBinding Light={StaticResource FondoClaro}, Dark={StaticResource FondoOscuro}}">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="24"
+            Spacing="20"
+            VerticalOptions="Center">
+
+            <Label
+                Text="CATÁLOGO DE CURSOS"
+                FontSize="14"
+                FontAttributes="Bold"
+                TextColor="{StaticResource AzulPrincipal}"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Aprende. Crece. Avanza."
+                FontSize="30"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Descubre cursos para desarrollar tus habilidades y ampliar tus conocimientos."
+                FontSize="16"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="Center" />
+
+            <Border
+                BackgroundColor="{AppThemeBinding Light={StaticResource SuperficieClara}, Dark={StaticResource SuperficieOscura}}"
+                Stroke="{StaticResource BordeClaro}"
+                StrokeThickness="1"
+                Padding="20"
+                StrokeShape="RoundRectangle 16">
+
+                <VerticalStackLayout Spacing="12">
+                    <Label
+                        Text="Tu próximo aprendizaje comienza aquí"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center" />
+
+                    <Label
+                        Text="Explora el catálogo, consulta los detalles y edita la información de los cursos disponibles."
+                        HorizontalTextAlignment="Center" />
+
+                    <Button
+                        Text="Explorar cursos"
+                        Style="{StaticResource BotonPrimario}"
+                        Clicked="OnExplorarCursosClicked" />
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

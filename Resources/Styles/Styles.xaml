@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Estilo general para etiquetas -->
+    <Style TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light={StaticResource TextoOscuro},
+                                        Dark={StaticResource TextoOscuroTema}}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="0,2" />
+        <Setter Property="LineBreakMode" Value="WordWrap" />
+    </Style>
+
+    <!-- Estilo general para campos de texto -->
+    <Style TargetType="Entry">
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light={StaticResource TextoOscuro},
+                                        Dark={StaticResource TextoOscuroTema}}" />
+        <Setter Property="PlaceholderColor" Value="#8492A6" />
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource SuperficieClara},
+                                        Dark={StaticResource SuperficieOscura}}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="0,4" />
+        <Setter Property="HeightRequest" Value="48" />
+    </Style>
+
+    <!-- Estilo general para selectores -->
+    <Style TargetType="Picker">
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light={StaticResource TextoOscuro},
+                                        Dark={StaticResource TextoOscuroTema}}" />
+        <Setter Property="TitleColor" Value="#8492A6" />
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource SuperficieClara},
+                                        Dark={StaticResource SuperficieOscura}}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="0,4" />
+        <Setter Property="HeightRequest" Value="56" />
+    </Style>
+
+    <!-- Estilo general para editores de texto -->
+    <Style TargetType="Editor">
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light={StaticResource TextoOscuro},
+                                        Dark={StaticResource TextoOscuroTema}}" />
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource SuperficieClara},
+                                        Dark={StaticResource SuperficieOscura}}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="0,4" />
+    </Style>
+
+    <!-- Botón principal -->
+    <Style x:Key="BotonPrimario" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource AzulPrincipal}" />
+        <Setter Property="TextColor" Value="{StaticResource TextoClaro}" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Padding" Value="16,12" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+
+    <!-- Botón secundario -->
+    <Style x:Key="BotonSecundario"
+           TargetType="Button"
+           BasedOn="{StaticResource BotonPrimario}">
+        <Setter Property="BackgroundColor" Value="{StaticResource AzulOscuro}" />
+    </Style>
+
+</ResourceDictionary>

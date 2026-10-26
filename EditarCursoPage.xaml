@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    BackgroundColor="{AppThemeBinding Light={StaticResource FondoClaro}, Dark={StaticResource FondoOscuro}}"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Catalogo_Cursos_Tarea4.EditarCursoPage"
+    Title="Editar curso">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="14">
+
+            <Label
+                Text="Editar curso"
+                FontSize="26"
+                FontAttributes="Bold"
+                TextColor="{StaticResource AzulPrincipal}"
+                HorizontalOptions="Center" />
+
+            <Label Text="Nombre" />
+            <Entry x:Name="NombreEntry"
+                   Placeholder="Nombre del curso" />
+
+            <Label Text="Descripción" />
+            <Editor x:Name="DescripcionEditor"
+                    Placeholder="Descripción del curso"
+                    AutoSize="TextChanges"
+                    HeightRequest="100" />
+
+            <Label Text="Instructor" />
+            <Entry x:Name="InstructorEntry"
+                   Placeholder="Nombre del instructor" />
+
+            <Label Text="Duración (horas)" />
+            <Entry x:Name="DuracionEntry"
+                   Placeholder="Duración en horas"
+                   Keyboard="Numeric" />
+
+            <Label Text="Nivel" />
+            <Picker x:Name="NivelPicker"
+                    Title="Selecciona el nivel">
+                <Picker.Items>
+                    <x:String>Principiante</x:String>
+                    <x:String>Intermedio</x:String>
+                    <x:String>Avanzado</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button
+                Text="Guardar cambios"
+                Style="{StaticResource BotonPrimario}"
+                Clicked="OnGuardarClicked" />
+
+            <Button
+                Text="Cancelar"
+                Style="{StaticResource BotonSecundario}"
+                Clicked="OnCancelarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

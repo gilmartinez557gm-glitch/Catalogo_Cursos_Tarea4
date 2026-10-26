@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    BackgroundColor="{AppThemeBinding Light={StaticResource FondoClaro}, Dark={StaticResource FondoOscuro}}"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Catalogo_Cursos_Tarea4.DetalleCursoPage"
+    Title="Detalle del curso">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+
+            <Label
+                Text="Detalle del curso"
+                FontSize="26"
+                FontAttributes="Bold"
+                TextColor="{StaticResource AzulPrincipal}"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Nombre del curso"
+                FontAttributes="Bold" />
+
+            <Label
+                x:Name="NombreLabel"
+                FontSize="20" />
+
+            <Label
+                Text="Descripción"
+                FontAttributes="Bold" />
+
+            <Label
+                x:Name="DescripcionLabel" />
+
+            <Label
+                Text="Instructor"
+                FontAttributes="Bold" />
+
+            <Label
+                x:Name="InstructorLabel" />
+
+            <Label
+                x:Name="DuracionLabel" />
+
+            <Label
+                x:Name="NivelLabel" />
+
+            <Button
+                Text="Editar curso"
+                Style="{StaticResource BotonPrimario}"
+                Clicked="OnEditarClicked" />
+
+            <Button
+                Text="Regresar"
+                Style="{StaticResource BotonSecundario}"
+                Clicked="OnRegresarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
